@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: linear-gradient(180deg, #0b102a, #0a0f1f);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #0b102a, #050814);
   color: #ffffff;
 }
 
@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .nav-left {
@@ -20,23 +20,24 @@ body {
 }
 
 .logo {
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
 
 .brand {
+  font-size: 1.2rem;
   font-weight: 600;
-  font-size: 1.1rem;
 }
 
-nav a {
-  color: #cbd5ff;
-  text-decoration: none;
+.nav-right a {
   margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.85;
 }
 
-nav a:hover {
-  color: #ffffff;
+.nav-right a:hover {
+  opacity: 1;
 }
 
 .container {
@@ -45,38 +46,15 @@ nav a:hover {
   padding: 0 20px;
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 8px;
-}
-
-.tagline {
-  color: #b0b8ff;
-}
-
 .card {
-  background: rgba(255,255,255,0.06);
-  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
   padding: 24px;
+  border-radius: 14px;
   margin-bottom: 24px;
-}
-
-.card h2 {
-  margin-top: 0;
-}
-
-.muted {
-  color: #b0b8ff;
 }
 
 footer {
   text-align: center;
   padding: 24px;
-  color: #9aa4ff;
-  font-size: 0.9rem;
+  opacity: 0.6;
 }
